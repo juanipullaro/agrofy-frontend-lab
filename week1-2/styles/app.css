@@ -99,8 +99,9 @@ body{
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+
     #Home button{
-        margin-left: auto; 
+        margin-left: 25%; 
     }
   }
 
@@ -169,7 +170,7 @@ section{
 .home-div > p {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10%;
+  
 }
 
 #Home button{
@@ -177,21 +178,35 @@ section{
     background: white;
     /* justify-content: flex-end; */
     /* width: 20%; */
-    margin-left: 0;
+    margin-left: 25%;
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     width: 150px;
     height: 50;
-    /* align-items: center; */
+    align-items: center;    
     font-size: 18px;
     flex-direction: row;
     justify-content: center;
     border-radius: 100px;
     /* border-color: yellow; */
     border-style: hidden;
+    justify-content: center;
+    margin-top: 15;
+}
+
+#Home > div {
+    
     display: flex;
     justify-content: center;
-    margin-left: 73%;
-    margin-top: 15;
+    justify-content: space-evenly;
+
+}
+
+#Home > div> img {
+    
+    display: flex;
+    justify-content: center;
+    width: 300;
+
 }
 
 #year1980{
