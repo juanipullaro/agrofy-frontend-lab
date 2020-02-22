@@ -55,7 +55,7 @@ body{
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media  only screen and  (max-width:768px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -116,7 +116,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
     padding: 10;
   }
 
@@ -163,17 +162,20 @@ section{
 
 .home-div > h1{
     display: flex;
-    justify-content: flex-end;
-    margin-right: 13%;
+    justify-content: center;
+    font-size: 250%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
 }
 
 .home-div > p {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   
 }
 
-#Home button{
+.btn-home{
     display: flex;
     background: white;
     /* justify-content: flex-end; */
@@ -212,41 +214,67 @@ section{
 #year1980{
     color:#62cab5;
     border-right-color: #62cab5;
+    display: flex;
+
     
 
 }
 
+.hist-desc{
+    margin-left: 10%;
+}
 
 #year1996{
     color:#e63456;
-   
-    
+    display: flex;    
 }
 
 #year1998{
     color:#ffee59;
-    
+    display: flex;    
 }
 
 section p{
     color:gray;
 }
 
-#ContactUs{
+
+#Videos{
+    margin-top: 20px;
+
+}
+.videos-div{
     display: flex;
+    align-content: center;
+    display: flex;
+    display: fe;
+    background-color: #00A8ED;
+    color: white;
+    text-align: center;
+}
+
+.videos-div > div{
+    margin:10%;
+    font-size: x-large;
+}
+.btn-grad {
+    background: white;
+    /* justify-content: flex-end; */
+    /* width: 20%; */
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    width: 150px;
+    height: 50;
+    align-items: center;    
+    font-size: 18px;
+    flex-direction: row;
     justify-content: center;
-}
-
-input{
-    height: 30;
-    width: 200%;
-    margin: 10%;
-    margin-left: 0px;
-    border-radius: 15px;
-    padding: 10px;
-}
-
-
+    border-radius: 100px;
+    /* border-color: yellow; */
+    border-style: hidden;
+    justify-content: center;
+    margin-top: 15;
+    background-image: linear-gradient(to right, #FF4E50 0%, #F9D423 51%, #FF4E50 100%)}
+.btn-grad:hover { background-position: right center; }
 
 footer{
     background-color: #3c3b3b;
@@ -256,4 +284,46 @@ footer{
     color:white;
     font-size: small;
 }
+
+#ContactUs{
+    display: flex;
+    justify-content: center;
+}
+
+input,textarea{
+    border-style: solid;
+    border-width: thin; 
+    border-color: gray;
+    width: 304px;
+    height: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+}
+
+textarea{
+    height: 30;
+    height: 60px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 14px;
+}
+
+
+.send-btn{
+    display: flex;
+    background: white;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    width: 150px;
+    height: 50;
+    align-items: center;    
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 100px;
+    border-style: hidden;
+    margin-top: 15;
+    color:white;
+}
+
 
