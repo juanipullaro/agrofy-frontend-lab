@@ -81,7 +81,7 @@ body{
       position: absolute;
       display: block;
       width: 100%;
-      background-color: #333;
+      background-color: white;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
@@ -96,12 +96,36 @@ body{
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
+      height: 500%;
       overflow-y: auto;
     }
 
     #Home button{
         margin-left: 25%; 
+    }
+
+    .videos-div{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    #History > div{
+      flex-direction: column;
+      justify-content: center;
+    }
+    #History > #year1996{
+      flex-direction: column-reverse;
+    }
+    .ini-hist{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #year1996 > .hist-desc{
+      flex-direction: row;
+    }
+    iframe{
+      width: 100%;
     }
   }
 
@@ -214,31 +238,49 @@ section{
 #year1980{
     color:#62cab5;
     border-right-color: #62cab5;
-    display: flex;
-
-    
-
+    display: flex;  
+}
+#year1980 svg{
+    fill:#62cab5;
 }
 
 .hist-desc{
     margin-left: 10%;
 }
-
+#History{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
 #year1996{
     color:#e63456;
     display: flex;    
+    flex-direction: row-reverse; 
+
+}
+#year1996 svg{
+    fill:#e63456;
 }
 
 #year1998{
     color:#ffee59;
-    display: flex;    
+    display: flex; 
+    border-left-color: red;  
 }
-
+#year1998>div>object> #document> svg{
+    fill:#ffee59;
+}
 section p{
     color:gray;
 }
 
+svg {
+    fill:red;
+}
 
+#History object{
+    height:40px;
+    margin: 20px;
+}
 #Videos{
     margin-top: 20px;
 
@@ -326,4 +368,17 @@ textarea{
     color:white;
 }
 
+.ini-hist{
+  display: flex;
+}
 
+li {
+  display: flex;
+  justify-content: center;
+}
+
+form h2{
+    justify-content: center;
+    display: flex;
+}
+}
