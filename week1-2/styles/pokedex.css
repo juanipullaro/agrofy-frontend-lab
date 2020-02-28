@@ -1,0 +1,29 @@
+.nav{
+    background-color: white;
+}
+
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search h2{
+    font-size: xx-large;
+}
+
+.btn-search{
+    display: inline;
+    margin-left: 10px;
+    color: white;
+}
+
+.search-input{
+    height: 50;
+    width: 500px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: medium;
+    color: gray;
+}
+
+

@@ -12,6 +12,7 @@ body{
     width: 100%;
     background-color: #f0e482;
     position: relative;
+    top: 0px;
   }
   
   .nav > .nav-header {
@@ -381,4 +382,5 @@ form h2{
     justify-content: center;
     display: flex;
 }
-}
+
+
