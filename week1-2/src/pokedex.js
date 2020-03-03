@@ -1,5 +1,5 @@
 const section = document.querySelector("section");
-var pokemons = [];
+let pokemons = [];
 const show_pokemon = (pokemon) =>{
     let card = '<div class="card" id="'+pokemon.name+'">'+
                 '<div class="img-card">'+
@@ -10,12 +10,10 @@ const show_pokemon = (pokemon) =>{
                 '<button class="btn-home btn-card">Add to  favs</button>'+
                 '</div></div>';
     const cards = document.querySelector(".poke-cards");
-    console.log(cards)
     cards.insertAdjacentHTML('beforeend',card);
 }
 const add_pokemons = () =>{
-    console.log('hola');
-    for (var i = 1; i <150 ; i++){
+    for (let i = 1; i <150 ; i++){
         fetch('http://pokeapi.co/api/v2/pokemon/'+i)
             .then((response) =>{
                 return response.json();
@@ -23,7 +21,7 @@ const add_pokemons = () =>{
             .then((myJson)=>{
                 /*console.log(myJson);**/
                 const {name,id,types,sprites:{front_default:img}} = myJson;
-                var typesArray = [];
+                let typesArray = [];
                 for (var {type:{name:typeName}} of types){
                     typesArray.push(typeName);
                 }
@@ -35,9 +33,33 @@ const add_pokemons = () =>{
     }}
 section.addEventListener('load',add_pokemons());
 
-var input = querySelector(".search-input");
-filter_pokemons = (input_text)=>{
-    pokemons.filter(f = (poke)=> {
-        return poke.name == input_text;
+const input = document.querySelector(".search-input");
+let search_pokemons= ()=>{
+    pokemons_filter = pokemons.filter(f = (poke)=> {
+        input_text = input.value.toLowerCase();
+        return poke.name.startsWith(input_text);
     });
+    const section = document.querySelector("section");
+    section.innerHTML="";
+    for (let pokemon of pokemons_filter){
+        show_pokemon(pokemon);
+
+    }
+};
+
+let show_all_pokemons = ()=>{
+    input_text = input.value.toLowerCase();
+    console.log(input_text);
+    if (input_text.length ==0){
+        section.innerHTML="";
+        for (let pokemon of pokemons){
+            show_pokemon(pokemon);
+        }
+    }
 }
+
+
+const btn_search = document.querySelector("#search-btn");
+input.addEventListener("input",show_all_pokemons);
+btn_search.addEventListener("click",search_pokemons);
+
