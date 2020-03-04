@@ -49,6 +49,13 @@
     margin-left: 0px;
     color:white;
 }
+
+.btn-remove{
+    border-color: #0fcff5;
+    background: white;
+    border-style: solid;
+    color: #0fcff5;
+}
 .card{ 
     margin: 30px;
     margin-bottom: 20px;
