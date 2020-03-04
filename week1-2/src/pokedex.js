@@ -104,7 +104,6 @@ window.onload = add_pokemons();
 /*const add_favs = () =>{
     console.log("hola");
     console.log(btn_addFavs);
-
     btn_addFavs.addEventListener("click",()=>{
         pokemon_id = btn.parentElement.parentElement.id;
         pokemon = pokemons.filter(f = (poke)=> {poke.id = pokemon_id});
