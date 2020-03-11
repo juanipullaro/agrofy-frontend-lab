@@ -10,7 +10,7 @@ const Header = () => {
         <Link to="/history"><li>History</li></Link>
         <Link to="/videos"><li>Videos</li></Link>
         <Link to="/pokedex"><li>Pokedex</li></Link>
-        <Link to="/favs"><li>My Favs</li></Link>
+        <Link to="/myfavs"><li>My Favs</li></Link>
     </ul>;
 
     return <header className="header">
