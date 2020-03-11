@@ -1,0 +1,13 @@
+.myfavs-page{
+    min-height:100vh;
+}
+h1{
+    text-align: center;
+}
+
+.pokemon-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
