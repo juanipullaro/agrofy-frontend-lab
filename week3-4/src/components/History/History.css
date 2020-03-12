@@ -1,0 +1,87 @@
+.history{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color:white;
+    padding: 60px;
+  }
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: x-large;
+}
+
+#year1980{
+    color: #62cab5;
+    border-left-style: solid;
+    border-left-color: #62cab5;
+    display: flex;
+    border-width: 5px;
+    align-items: center;
+}
+
+#year1980> object>svg{
+    fill:#62cab5;
+}
+
+.hist-desc{
+    margin-left: 30px;
+}
+
+.year {
+    display: flex;
+    flex-direction: row;
+}
+#year1996{
+    color: #e63456;
+    display: flex;
+    border-right-style: solid;
+    flex-direction: row-reverse;
+    border-right-width: 5px;
+    align-items: center;
+
+}
+#year1996 >h2 {
+    margin-right: 30px;
+}
+#year1996 svg{
+    fill:#e63456;
+}
+
+#year1998{
+    color:#ffee59;
+    display: flex; 
+    align-items: center;
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+#year1998>div>object> #document> svg{
+    fill:#ffee59;
+}
+section p{
+    color:gray;
+}
+
+
+object{
+    height:60px;
+    margin: 20px;
+}
+
+@media  only screen and  (max-width:768px) {
+    section >div{
+        flex-direction: column;
+    }
+
+
+    #year1996{
+        flex-direction: column-reverse;
+    }
+    
+    iframe{
+        width: 80%;
+        margin-top: 20px;
+    }
+}

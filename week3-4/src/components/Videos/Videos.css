@@ -1,0 +1,42 @@
+#videos{
+    margin-top: 20px;
+    background-color: #00A8ED;
+    
+
+}
+.videos-div{
+    display: flex;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.videos-div > div{
+    width: 400px;
+    font-size: x-large;
+}
+.btn-grad {
+    background: white;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 100px;
+    border-style: hidden;
+    justify-content: center;
+    margin-top: 15;
+    background-image: linear-gradient(to right, #FF4E50 0%, #F9D423 51%, #FF4E50 100%);}
+.btn-grad:hover { background-position: right center; }
+
+.btn-grad > a {
+    color: white;
+}
+
+.rotate{
+    transform: rotate(180deg);}

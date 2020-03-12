@@ -8,7 +8,9 @@ const Home = lazy(() => import('./pages/Home/Home'));
 const Pokedex = lazy(() => import('./pages/Pokedex/Pokedex'));
 const MyFavs = lazy(() => import('./pages/MyFavs/MyFavs'));
 
+
 const App = () => (
+
   <React.Fragment>
   <Router>
     <Header />
@@ -17,6 +19,7 @@ const App = () => (
         <Route exact path="/" component={Home}/>
         <Route exact path="/pokedex" component={Pokedex}/>
         <Route exact path="/myfavs" component={MyFavs}/>
+       
       </Switch>
     </Suspense>
     <Footer />
