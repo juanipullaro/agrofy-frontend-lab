@@ -1,0 +1,41 @@
+section{
+    background-color:#f0e482;
+}
+.svg-div{
+    height: 100px; overflow: hidden;
+}
+
+.svg{
+    height: 100%; width: 100%;
+}
+
+.svg > path{
+    stroke: none; fill: rgb(255, 255, 255);
+}
+
+.hero-div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.hero-div > img{
+    height: 400px;
+    margin-top: 30px;
+
+}
+
+.btn-home{
+    color: white;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 100px;
+    border-style: hidden;
+}
+
+.btn-home > a{
+    text-decoration: none;
+    color: white;
+}
